@@ -21,7 +21,7 @@ conf:
     port: 9000          # `manager api` listening port
   etcd:
     endpoints:
-      - http://10.97.92.215:2379
+      - http://etcd:2379
         #      - ${{ETCD_HOSTS}}
 
       # etcd basic auth info
