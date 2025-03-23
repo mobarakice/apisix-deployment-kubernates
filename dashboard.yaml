@@ -15,13 +15,13 @@ spec:
     spec:
       containers:
       - name: apisix-dashboard
-        image: apisix-dashboard:3.0.5
+        image: apisix-dashboard:3.0.2
         ports:
         - containerPort: 9000
         env:
-        - name: APISIX_DASHBOARD_DEPLOYMENT
+        - name: DEPLOYMENT
           value: "minikube"
-        - name: APISIX_DASHBOARD_ETCD_ENDPOINTS
+        - name: DEPLOYMENT_ETCD_ENDPOINTS
           value: "http://etcd:2379"
 
 ---
